@@ -10,6 +10,9 @@
 
 #include "HashNode.h"
 
+using std::string;
+
+
 template<class ItemType>
 class HashTable
 {
@@ -17,12 +20,16 @@ private:
     HashNode<ItemType>* hashAry;
     int hashSize;
     int count;
+    static int totalCollisions;
+    static int longestPath;
 
 public:
-    HashTable() { count = 0; hashSize = 53; hashAry = new HashNode<ItemType>[hashSize]; }
+    HashTable() { count = 0; hashSize = 67; hashAry = new HashNode<ItemType>[hashSize]; } //hashSize = next prime number after the # of entries in input x 2 
     HashTable(int n) { count = 0; hashSize = n;	hashAry = new HashNode<ItemType>[hashSize]; }
     ~HashTable() { delete[] hashAry; }
 
+    int getLongestpath() const { return longestPath; }
+    int getTotalCollisions() const { return totalCollisions; }
     int getCount() const { return count; }
     int getSize() const { return hashSize; }
     double getLoadFactor() const { return 100.0 * count / hashSize; }
@@ -32,8 +39,13 @@ public:
     bool insert(const ItemType& itemIn, int h(const ItemType& key, int size));
     bool remove(ItemType& itemOut, const ItemType& key, int h(const ItemType& key, int size));
     int  search(ItemType& itemOut, const ItemType& key, int h(const ItemType& key, int size)) const;
+    void displayHashTable() const;
 };
+template<class ItemType>
+int HashTable<ItemType>::totalCollisions = 0;
 
+template<class ItemType>
+int HashTable<ItemType>::longestPath = 0;
 /*~*~*~*
    Insert an item into the hash table
    It does not reject duplicates
@@ -50,7 +62,7 @@ bool HashTable<ItemType>::insert(const ItemType& itemIn, int h(const ItemType& k
 
     while (hashAry[index].getOccupied() != 0)
     {
-        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getName() == itemIn.getName())
+        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getIpAddress() == itemIn.getIpAddress())
             return false;
 
         if (firstDeleted == -1 && hashAry[index].getOccupied() == -1)
@@ -63,10 +75,15 @@ bool HashTable<ItemType>::insert(const ItemType& itemIn, int h(const ItemType& k
     if (firstDeleted != -1)
         index = firstDeleted;
 
+    totalCollisions += collisions;
+
     hashAry[index].setItem(itemIn);
     hashAry[index].setOccupied(1);
     hashAry[index].setNoCollisions(collisions);
     count++;
+
+    if (collisions > longestPath)
+        longestPath = collisions;
 
     return true;
 }
@@ -89,7 +106,7 @@ bool HashTable<ItemType>::remove(ItemType& itemOut, const ItemType& key, int h(c
 
     while (hashAry[index].getOccupied() != 0)
     {
-        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getName() == key.getName())
+        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getIpAddress() == key.getIpAddress())
         {
             itemOut = hashAry[index].getItem();
             hashAry[index].setOccupied(-1);
@@ -121,7 +138,7 @@ int HashTable<ItemType>::search(ItemType& itemOut, const ItemType& key, int h(co
 
     while (hashAry[index].getOccupied() != 0)
     {
-        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getName() == key.getName())
+        if (hashAry[index].getOccupied() == 1 && hashAry[index].getItem().getIpAddress() == key.getIpAddress())
         {
             itemOut = hashAry[index].getItem();
             return collisions;
@@ -138,6 +155,15 @@ int HashTable<ItemType>::search(ItemType& itemOut, const ItemType& key, int h(co
 
     return -1;
 }
-
-
+template<class ItemType>
+void HashTable<ItemType>::displayHashTable() const {
+    for (int index = 0; index < hashSize; ++index) {
+        if (hashAry[index].getOccupied() == 1) {
+            std::cout << "Index " << index << ": " << hashAry[index].getItem().getIpAddress() << std::endl;
+        }
+        else {
+            std::cout << "Index " << index << ": EMPTY" << std::endl;
+        }
+    }
+}
 #endif // HASHTABLE_H_

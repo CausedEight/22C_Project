@@ -1,0 +1,31 @@
+192.168.0.1,John Doe,New York, NY,www.example.com,12,30
+10.0.0.2,Jane Smith,Los Angeles, CA,www.openai.com,9,45
+172.16.0.3,Michael Johnson,Chicago, IL,www.google.com,15,20
+192.168.0.4,Emily Brown,San Francisco, CA,www.facebook.com,17,10
+10.0.0.5,David Wilson,Boston, MA,www.twitter.com,14,50
+172.16.0.6,Sarah Lee,Houston, TX,www.linkedin.com,10,15
+192.168.0.7,Robert Davis,Philadelphia, PA,www.netflix.com,16,30
+10.0.0.8,Jessica Anderson,Miami, FL,www.youtube.com,11,45
+172.16.0.9,Christopher Martin,Dallas, TX,www.amazon.com,18,20
+192.168.0.10,Amanda Thompson,Phoenix, AZ,www.microsoft.com,13,10
+10.0.0.11,James White,Denver, CO,www.apple.com,9,20
+172.16.0.12,Alexis Garcia,Seattle, WA,www.spotify.com,14,15
+192.168.0.13,Andrew Hernandez,Austin, TX,www.reddit.com,17,40
+10.0.0.14,Olivia Wilson,San Diego, CA,www.instagram.com,10,55
+172.16.0.15,Matthew Thomas,Portland, OR,www.pinterest.com,15,30
+192.168.0.16,Elizabeth Robinson,Atlanta, GA,www.wikipedia.org,12,15
+10.0.0.17,Nathan Taylor,Columbus, OH,www.stackoverflow.com,16,50
+172.16.0.18,Grace Lewis,San Antonio, TX,www.ebay.com,11,10
+192.168.0.19,Jonathan Harris,Charlotte, NC,www.nytimes.com,13,35
+10.0.0.20,Chloe Turner,Indianapolis, IN,www.cnn.com,18,5
+172.16.0.21,Samuel Martinez,San Jose, CA,www.espn.com,9,30
+192.168.0.22,Mia Phillips,Detroit, MI,www.nba.com,14,25
+10.0.0.23,William Rodriguez,Memphis, TN,www.abcnews.go.com,17,0
+172.16.0.24,Ella Scott,Jacksonville, FL,www.cbs.com,10,40
+192.168.0.25,Noah Cooper,Arlington, TX,www.nfl.com,15,15
+10.0.0.26,Sophia Patterson,Tampa, FL,www.bbc.co.uk,12,40
+172.16.0.27,Liam Rivera,Minneapolis, MN,www.npr.org,16,15
+192.168.0.28,Avery Reed,Raleigh, NC,www.twitch.tv,11,30
+10.0.0.29,Aubrey Bailey,Honolulu, HI,www.tennischannel.com,13,55
+172.16.0.30,Harper Foster,New Orleans, LA,www.wsj.com,18,30
+192.168.0.31,Logan Hayes,Baltimore, MD,www.nhl.com,9,45
