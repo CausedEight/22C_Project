@@ -16,6 +16,9 @@
 #include <ctime>
 #include <chrono>
 #include <random>
+#include "HashTable.h"
+#include "BinaryST.h"
+#include "User.h"
 
 using namespace std;
 
@@ -79,7 +82,6 @@ void userUI(HashTable<User> &hash, BinaryTree<User> &tree){
     hash.insert(newUser, hashFunc);
     tree.insert(newUser);
 }
-
 /* **************************************************
 This function searches a hash table with user provided data.
 It calls the hash search function in a loop.
