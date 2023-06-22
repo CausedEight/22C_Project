@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACE02E6C2A3BCC0D0024F0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */; };
+		AC66B5842A422F7400F8871D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC66B5832A422F7400F8871D /* main.cpp */; };
+		AC66B5902A42307E00F8871D /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC66B58E2A42307E00F8871D /* User.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ACE02E662A3BCC0D0024F0A1 /* CopyFiles */ = {
+		AC66B57E2A422F7400F8871D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,20 +24,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		ACE02E682A3BCC0D0024F0A1 /* CIS22CFinal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CIS22CFinal; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		ACE02E762A3BCC920024F0A1 /* Tester.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tester.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC66B5802A422F7400F8871D /* CIS22CFinal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CIS22CFinal; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC66B5832A422F7400F8871D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AC66B58A2A422FA500F8871D /* BinaryNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryNode.h; sourceTree = "<group>"; };
+		AC66B58B2A422FE300F8871D /* BinaryST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryST.h; sourceTree = "<group>"; };
+		AC66B58C2A42302600F8871D /* HashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashNode.h; sourceTree = "<group>"; };
+		AC66B58D2A42304900F8871D /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		AC66B58E2A42307E00F8871D /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		AC66B58F2A42307E00F8871D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ACE02E652A3BCC0D0024F0A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACE02E732A3BCC920024F0A1 /* Frameworks */ = {
+		AC66B57D2A422F7400F8871D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,27 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ACE02E5F2A3BCC0D0024F0A1 = {
+		AC66B5772A422F7400F8871D = {
 			isa = PBXGroup;
 			children = (
-				ACE02E6A2A3BCC0D0024F0A1 /* CIS22CFinal */,
-				ACE02E692A3BCC0D0024F0A1 /* Products */,
+				AC66B5822A422F7400F8871D /* CIS22CFinal */,
+				AC66B5812A422F7400F8871D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ACE02E692A3BCC0D0024F0A1 /* Products */ = {
+		AC66B5812A422F7400F8871D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACE02E682A3BCC0D0024F0A1 /* CIS22CFinal */,
-				ACE02E762A3BCC920024F0A1 /* Tester.xctest */,
+				AC66B5802A422F7400F8871D /* CIS22CFinal */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ACE02E6A2A3BCC0D0024F0A1 /* CIS22CFinal */ = {
+		AC66B5822A422F7400F8871D /* CIS22CFinal */ = {
 			isa = PBXGroup;
 			children = (
-				ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */,
+				AC66B5832A422F7400F8871D /* main.cpp */,
+				AC66B58C2A42302600F8871D /* HashNode.h */,
+				AC66B58D2A42304900F8871D /* HashTable.h */,
+				AC66B58E2A42307E00F8871D /* User.cpp */,
+				AC66B58F2A42307E00F8871D /* User.h */,
+				AC66B58B2A422FE300F8871D /* BinaryST.h */,
+				AC66B58A2A422FA500F8871D /* BinaryNode.h */,
 			);
 			path = CIS22CFinal;
 			sourceTree = "<group>";
@@ -74,13 +78,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACE02E672A3BCC0D0024F0A1 /* CIS22CFinal */ = {
+		AC66B57F2A422F7400F8871D /* CIS22CFinal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACE02E6F2A3BCC0D0024F0A1 /* Build configuration list for PBXNativeTarget "CIS22CFinal" */;
+			buildConfigurationList = AC66B5872A422F7400F8871D /* Build configuration list for PBXNativeTarget "CIS22CFinal" */;
 			buildPhases = (
-				ACE02E642A3BCC0D0024F0A1 /* Sources */,
-				ACE02E652A3BCC0D0024F0A1 /* Frameworks */,
-				ACE02E662A3BCC0D0024F0A1 /* CopyFiles */,
+				AC66B57C2A422F7400F8871D /* Sources */,
+				AC66B57D2A422F7400F8871D /* Frameworks */,
+				AC66B57E2A422F7400F8871D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -88,44 +92,24 @@
 			);
 			name = CIS22CFinal;
 			productName = CIS22CFinal;
-			productReference = ACE02E682A3BCC0D0024F0A1 /* CIS22CFinal */;
+			productReference = AC66B5802A422F7400F8871D /* CIS22CFinal */;
 			productType = "com.apple.product-type.tool";
-		};
-		ACE02E752A3BCC920024F0A1 /* Tester */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACE02E7A2A3BCC920024F0A1 /* Build configuration list for PBXNativeTarget "Tester" */;
-			buildPhases = (
-				ACE02E722A3BCC920024F0A1 /* Sources */,
-				ACE02E732A3BCC920024F0A1 /* Frameworks */,
-				ACE02E742A3BCC920024F0A1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Tester;
-			productName = Tester;
-			productReference = ACE02E762A3BCC920024F0A1 /* Tester.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ACE02E602A3BCC0D0024F0A1 /* Project object */ = {
+		AC66B5782A422F7400F8871D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					ACE02E672A3BCC0D0024F0A1 = {
-						CreatedOnToolsVersion = 14.3.1;
-					};
-					ACE02E752A3BCC920024F0A1 = {
+					AC66B57F2A422F7400F8871D = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = ACE02E632A3BCC0D0024F0A1 /* Build configuration list for PBXProject "CIS22CFinal" */;
+			buildConfigurationList = AC66B57B2A422F7400F8871D /* Build configuration list for PBXProject "CIS22CFinal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,47 +117,30 @@
 				en,
 				Base,
 			);
-			mainGroup = ACE02E5F2A3BCC0D0024F0A1;
-			productRefGroup = ACE02E692A3BCC0D0024F0A1 /* Products */;
+			mainGroup = AC66B5772A422F7400F8871D;
+			productRefGroup = AC66B5812A422F7400F8871D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACE02E672A3BCC0D0024F0A1 /* CIS22CFinal */,
-				ACE02E752A3BCC920024F0A1 /* Tester */,
+				AC66B57F2A422F7400F8871D /* CIS22CFinal */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		ACE02E742A3BCC920024F0A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		ACE02E642A3BCC0D0024F0A1 /* Sources */ = {
+		AC66B57C2A422F7400F8871D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE02E6C2A3BCC0D0024F0A1 /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACE02E722A3BCC920024F0A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AC66B5902A42307E00F8871D /* User.cpp in Sources */,
+				AC66B5842A422F7400F8871D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ACE02E6D2A3BCC0D0024F0A1 /* Debug */ = {
+		AC66B5852A422F7400F8871D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		ACE02E6E2A3BCC0D0024F0A1 /* Release */ = {
+		AC66B5862A422F7400F8871D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +249,7 @@
 			};
 			name = Release;
 		};
-		ACE02E702A3BCC0D0024F0A1 /* Debug */ = {
+		AC66B5882A422F7400F8871D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -292,85 +259,38 @@
 			};
 			name = Debug;
 		};
-		ACE02E712A3BCC0D0024F0A1 /* Release */ = {
+		AC66B5892A422F7400F8871D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5KNRN4662;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		ACE02E7B2A3BCC920024F0A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5KNRN4662;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = slavmir.Tester;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ACE02E7C2A3BCC920024F0A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5KNRN4662;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = slavmir.Tester;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACE02E632A3BCC0D0024F0A1 /* Build configuration list for PBXProject "CIS22CFinal" */ = {
+		AC66B57B2A422F7400F8871D /* Build configuration list for PBXProject "CIS22CFinal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACE02E6D2A3BCC0D0024F0A1 /* Debug */,
-				ACE02E6E2A3BCC0D0024F0A1 /* Release */,
+				AC66B5852A422F7400F8871D /* Debug */,
+				AC66B5862A422F7400F8871D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACE02E6F2A3BCC0D0024F0A1 /* Build configuration list for PBXNativeTarget "CIS22CFinal" */ = {
+		AC66B5872A422F7400F8871D /* Build configuration list for PBXNativeTarget "CIS22CFinal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACE02E702A3BCC0D0024F0A1 /* Debug */,
-				ACE02E712A3BCC0D0024F0A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACE02E7A2A3BCC920024F0A1 /* Build configuration list for PBXNativeTarget "Tester" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACE02E7B2A3BCC920024F0A1 /* Debug */,
-				ACE02E7C2A3BCC920024F0A1 /* Release */,
+				AC66B5882A422F7400F8871D /* Debug */,
+				AC66B5892A422F7400F8871D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ACE02E602A3BCC0D0024F0A1 /* Project object */;
+	rootObject = AC66B5782A422F7400F8871D /* Project object */;
 }
