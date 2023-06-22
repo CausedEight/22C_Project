@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ACE02E6C2A3BCC0D0024F0A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */; };
-		ACE02E792A3BCC920024F0A1 /* Tester.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE02E782A3BCC920024F0A1 /* Tester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +26,6 @@
 		ACE02E682A3BCC0D0024F0A1 /* CIS22CFinal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CIS22CFinal; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		ACE02E762A3BCC920024F0A1 /* Tester.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tester.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACE02E782A3BCC920024F0A1 /* Tester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tester.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				ACE02E6A2A3BCC0D0024F0A1 /* CIS22CFinal */,
-				ACE02E772A3BCC920024F0A1 /* Tester */,
 				ACE02E692A3BCC0D0024F0A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,14 +69,6 @@
 				ACE02E6B2A3BCC0D0024F0A1 /* main.cpp */,
 			);
 			path = CIS22CFinal;
-			sourceTree = "<group>";
-		};
-		ACE02E772A3BCC920024F0A1 /* Tester */ = {
-			isa = PBXGroup;
-			children = (
-				ACE02E782A3BCC920024F0A1 /* Tester.m */,
-			);
-			path = Tester;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE02E792A3BCC920024F0A1 /* Tester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
