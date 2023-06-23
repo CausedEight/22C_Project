@@ -14,7 +14,8 @@
 using std::string;
 
 class User;
-int hashFunc(const User& key, int size);
+friend int hashFunc(const User& key, int size);
+
 
 class User
 {

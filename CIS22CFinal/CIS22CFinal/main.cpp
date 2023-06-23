@@ -36,6 +36,17 @@ void generateIP(string &);
 
 int hashFunc(const User& key, int size);
 
+void undoDelete(HashTable<User> &hash, BinarySt<string> &bst, Stack<User> &stck){
+    if (stck.isEmpty()){
+        cout << "No recently Deleted Users." << endl;
+    }else{
+        User newUser = stck.pop();
+        bst.insert(newUser.getName());
+        hash.insert(newUser,hashFunc);
+        cout << newUser.getName() << "added back to list." << endl;
+    }
+}
+
 
 int main(){
     HashTable <User> hash;

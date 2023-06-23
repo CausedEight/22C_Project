@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87D934E22A461A4300319E7A /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		AC66B5802A422F7400F8871D /* CIS22CFinal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CIS22CFinal; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC66B5832A422F7400F8871D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AC66B58A2A422FA500F8871D /* BinaryNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryNode.h; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 				AC66B58F2A42307E00F8871D /* User.h */,
 				AC66B58B2A422FE300F8871D /* BinaryST.h */,
 				AC66B58A2A422FA500F8871D /* BinaryNode.h */,
+				87D934E22A461A4300319E7A /* Stack.h */,
 			);
 			path = CIS22CFinal;
 			sourceTree = "<group>";
@@ -253,7 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KNRN4662;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -263,7 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N5KNRN4662;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
